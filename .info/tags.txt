@@ -1,0 +1,6 @@
+sudo
+UAC
+elevation
+link-capability
+symlink
+pwshrc

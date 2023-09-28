@@ -6,6 +6,13 @@ Set-StrictMode -Version Latest
 <#
 .SYNOPSIS
     Tests which filesystem link capabilities are supported by the current session.
+.OUTPUTS
+    System.Management.Automation.PSCustomObject
+    If the current session supports filesystem links, returns an object with the following properties:
+        HardLinks: An array of strings indicating which types of hard links are supported.
+        Junctions: An array of strings indicating which types of junctions are supported.
+        SymbolicLinks: An array of strings indicating which types of symbolic links are supported.
+    If the current session does not support filesystem links, returns $false.
 .NOTES
     See: https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions
 #>

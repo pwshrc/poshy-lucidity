@@ -4,6 +4,12 @@ $ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
 
 
+<#
+.SYNOPSIS
+    Tests whether or not the current session is interactive.
+.OUTPUTS
+    System.Boolean
+#>
 function Test-SessionInteractivity {
     [CmdletBinding()]
     param()
